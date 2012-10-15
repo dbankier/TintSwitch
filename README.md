@@ -5,6 +5,8 @@ This module extends the Titanium Switch to allow changing the "ON" color from th
 
 **NOTE**: This module is for use with iOS 5 and above and iOS only.
 
+Compiled module is available in the _Downloads_ section.
+
 
 Usage
 -----

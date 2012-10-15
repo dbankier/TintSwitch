@@ -1,7 +1,10 @@
-SwitchTint
-============
+TintSwitch
+==========
 
 This module extends the Titanium Switch to allow changing the "ON" color from the default blue color to any defined color.
+
+_UPDATED_: You can now change the on, off, and toggle tints as well as
+the on and off images. API has changed. See the example.
 
 **NOTE**: This module is for use with iOS 5 and above and iOS only.
 
@@ -27,12 +30,26 @@ require('com.yydigital.tintswitch');
 
 The module provides no public api. It's simply used for extending the TiUISwitch class provided by the Ti SDK with additional functionality.
 
-You will then have a `tint` property that can be used as follows:
+You will then have a the `onTint`, `offTint`, `thumbTint`, `onImage`,
+`offImage` that can be used as follows:
 
 ```javascript
 var sw = Ti.UI.createSwitch({
   value: true,
-  tint: "red"
+  offTint: "red",
+  onTint: "green",
+  thumbTint: "blue",
+  top: 50
+});
+```
+
+```javascript
+var sw2 = Ti.UI.createSwitch({
+  value: true,
+  offImage: "/off.png",
+  onImage: "/on.png",
+  onTint: 'purple',
+  bottom: 50
 });
 ```
 

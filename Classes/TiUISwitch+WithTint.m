@@ -33,13 +33,11 @@
 
 -(void)setOnImage_:(id)args
 {
-    TiColor * tintColor = [TiUtils colorValue:args];
     [[self switchView] setOnImage:[TiUtils toImage:args proxy: self.proxy]];
 }
 
 -(void)setOffImage_:(id)args
 {
-    TiColor * tintColor = [TiUtils colorValue:args];
     [[self switchView] setOffImage:[TiUtils toImage:args proxy: self.proxy]];
 }
 

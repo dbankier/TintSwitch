@@ -26,9 +26,28 @@ var sw2 = Ti.UI.createSwitch({
   offImage: "/off.png",
   onImage: "/on.png",
   onTint: 'purple',
-  bottom: 50
+  top: 80
 });
 win.add(sw2);
+
+var sw3 = Ti.UI.createSwitch({
+  value: false,
+  offTint: "red",
+  onTint: "green",
+  thumbTint: "grey",
+  top: 110
+});
+win.add(sw3);
+
+var sw4 = Ti.UI.createSwitch({
+  value: false,
+  offImage: "/off.png",
+  onImage: "/on.png",
+  onTint: 'purple',
+  top: 140
+});
+win.add(sw4);
+
 
 
 

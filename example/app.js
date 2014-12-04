@@ -9,14 +9,46 @@ Ti.API.info("module is => " + tintswitch);
 
 // open a single window
 var win = Ti.UI.createWindow({
-	backgroundColor:'green'
+	backgroundColor:'white'
 });
 
 var sw = Ti.UI.createSwitch({
   value: true,
-  tint: "red"
+  offTint: "red",
+  onTint: "green",
+  thumbTint: "blue",
+  top: 50
 });
 win.add(sw);
+
+var sw2 = Ti.UI.createSwitch({
+  value: true,
+  offImage: "/off.png",
+  onImage: "/on.png",
+  onTint: 'purple',
+  top: 80
+});
+win.add(sw2);
+
+var sw3 = Ti.UI.createSwitch({
+  value: false,
+  offTint: "red",
+  onTint: "green",
+  thumbTint: "grey",
+  top: 110
+});
+win.add(sw3);
+
+var sw4 = Ti.UI.createSwitch({
+  value: false,
+  offImage: "/off.png",
+  onImage: "/on.png",
+  onTint: 'purple',
+  top: 140
+});
+win.add(sw4);
+
+
 
 
 

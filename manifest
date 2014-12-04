@@ -2,10 +2,11 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.2
+version: 0.2.1
 apiversion: 2
+architectures: i386 x86_64 armv7 arm64
 description: My module
-author: David Bankier 
+author: David Bankier
 license: MIT
 copyright: Copyright (c) 2012 YY Digital Pty Ltd
 
@@ -14,4 +15,4 @@ name: tintswitch
 moduleid: com.yydigital.tintswitch
 guid: 0e54e329-11bb-434e-8303-d436f7fdb19f
 platform: iphone
-minsdk: 2.1.3.GA
+minsdk: 3.4.1
